@@ -12,6 +12,22 @@ var articleOne = {
     article: '<p> This is my first Article which introduces my Serverside JS.</p>;'
 };
 
+var articleTwo = {
+    title: 'Article Two | Anton',
+    header: 'Antons Article Article Two',
+    date: ' Sep 2017',
+    article: '<p> This is my second Article which introduces my Serverside JS.</p>;'
+};
+
+var articleThree = {
+    title: 'Article Three | Anton',
+    header: 'Antons Article Three',
+    date: ' Sep 2017',
+    article: '<p> This is my third Article which introduces my Serverside JS.</p>;'
+};
+
+
+
 function siteCreate(data) {
     title = data.title;
     header = data.header;
@@ -70,12 +86,12 @@ app.get('/article-one', function (req, res) {
 });
 
 app.get('/article-two', function (req, res) {
-   res.send("Article two served here"); 
+   res.send(siteCreate(articleTwo));
     
 });
 
 app.get('/article-three', function (req, res) {
-   res.send("Article one served here"); 
+   res.send(siteCreate(articleThree)); 
     
 });
 
