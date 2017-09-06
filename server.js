@@ -9,7 +9,7 @@ var articleOne = {
     title: 'Article one | Anton',
     header: 'Antons Article',
     date: ' Sep 2017',
-    article: '<p> This is my first Article which introduces my works.</p>;'
+    article: '<p> This is my first Article which introduces my Serverside JS.</p>;'
 };
 
 function siteCreate(data) {
