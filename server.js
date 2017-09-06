@@ -6,19 +6,19 @@ var app = express();
 app.use(morgan('combined'));
 
 var articles = {
- articleOne: {
+ 'article-one': {
     title: 'Article one | Anton',
     header: 'Antons Article',
     date: ' Sep 2017',
     article: '<p> This is my first Article which introduces my Serverside JS.</p>;'
 },
- articleTwo: {
+ 'article-two': {
     title: 'Article Two | Anton',
     header: 'Antons Article Article Two',
     date: ' Sep 2017',
     article: '<p> This is my second Article which introduces my Serverside JS.</p>;'
 },
- articleThree: {
+ 'article-three': {
     title: 'Article Three | Anton',
     header: 'Antons Article Three',
     date: ' Sep 2017',
